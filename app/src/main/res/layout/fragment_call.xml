@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CallFragment">
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/search_view_bg"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search Here..." />
+
+
+    <ListView
+        android:id="@+id/courselist"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/searchView" />
+
+    <TextView
+        android:id="@+id/txtview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courselist" />
+
+    <Spinner
+        android:id="@+id/collegespinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/courselist"
+        android:layout_margin="20dp"
+        android:background="@drawable/search_view_bg"
+        android:foregroundTint="@color/green"
+        android:padding="14dp"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/collegespinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Submit" />
+
+</RelativeLayout>
